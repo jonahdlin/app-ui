@@ -1,0 +1,52 @@
+.lights-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: 500px;
+  border: 1px dashed black;
+}
+
+.common-lights-container {
+  @extend %flex-center;
+}
+
+.common-lights {
+  margin-right: -1px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  & img {
+    width: 9px;
+    height: 16px;
+  }
+
+  &.common-lights-rotation-1 {
+    transform: rotate(0deg)
+  }
+
+  &.common-lights-rotation-2 {
+    transform: rotate(5deg)
+  }  
+
+  &.common-lights-rotation-3 {
+    transform: rotate(-5deg)
+  }
+
+  &.common-lights-rotation-4 {
+    transform: rotate(9deg)
+  }
+
+  &.common-lights-rotation-4 {
+    transform: rotate(-9deg)
+  }
+}
+
+.common-lights-connector {
+  & img {
+    width: 20px;
+    height: 10px;
+  }
+}
